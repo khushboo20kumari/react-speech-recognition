@@ -24,10 +24,10 @@ function SpeechReco() {
                     <div className="card-body">
                         <div className="box">
                             <textarea value={transcript} className="textarea" placeholder="Text Here...."/><br></br>
-                            <button className="btn btn-primary" onClick={handleStart}>Start</button>
-                            <button style={{ marginLeft: "10px" }} className="btn btn-primary" onClick={resetTranscript}>Clear</button>
-                            <button style={{ marginLeft: "10px" }} className="btn btn-primary" onClick={stopListening}>Stop</button>
-                            <button style={{ marginLeft: "10px" }} className="btn btn-primary" onClick={setCapy}>copy</button>
+                            <button className="btn btn-success" onClick={handleStart}>Start</button>
+                            <button style={{ marginLeft: "10px" }} className="btn btn-danger" onClick={resetTranscript}>Clear</button>
+                            <button style={{ marginLeft: "10px" }} className="btn btn-danger" onClick={stopListening}>Stop</button>
+                            <button style={{ marginLeft: "10px" }} className="btn btn-light" onClick={setCapy}>copy</button>
                             {capy ? "Yes! 👍" : "Nope! 👎"}
                         </div>
 
