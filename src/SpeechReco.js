@@ -15,33 +15,20 @@ function SpeechReco() {
 
     return (
         <>
-            {/* 
 
-            <center>
-                <div class="card" style={{ width: "18rem" }}>
-                    <div class="card-body">
-                        <textarea value={transcript} /><br></br>
-                        <button onClick={handleStart}>Start</button>
-                        <button onClick={resetTranscript}>Clear</button>
-                        <button onClick={stopListening}>Stop</button>
-                        <button onClick={setCapy}>copy</button>
-                        Was it copied? {capy ? "Yes! 👍" : "Nope! 👎"}
-                    </div>
-                </div>
-            </center> */}
 
 
             <div className="card">
                 <center>
 
                     <div className="card-body">
-                        <div>
-                            <textarea value={transcript} style={{ width: "40%" }} /><br></br>
+                        <div className="box">
+                            <textarea value={transcript} className="textarea" placeholder="Text Here...."/><br></br>
                             <button className="btn btn-primary" onClick={handleStart}>Start</button>
                             <button style={{ marginLeft: "10px" }} className="btn btn-primary" onClick={resetTranscript}>Clear</button>
                             <button style={{ marginLeft: "10px" }} className="btn btn-primary" onClick={stopListening}>Stop</button>
                             <button style={{ marginLeft: "10px" }} className="btn btn-primary" onClick={setCapy}>copy</button>
-                            Was it copied? {capy ? "Yes! 👍" : "Nope! 👎"}
+                            {capy ? "Yes! 👍" : "Nope! 👎"}
                         </div>
 
 
